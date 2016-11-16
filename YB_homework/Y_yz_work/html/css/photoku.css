@@ -1,0 +1,23 @@
+div.img
+	{
+		margin:3px;
+		border:1px solid #bebebe;
+		float:left;
+		text-align:center;
+}
+	div.img img
+	  {
+	  margin:3px;
+	  border:2px solid #bebebe;
+	  }
+	div.miaoshu
+	  {
+	  text-align:center;
+	  margin:10px;
+	  }
+
+	div.img img:hover
+	{
+		margin:3px;
+		border:2px solid #333;
+	}

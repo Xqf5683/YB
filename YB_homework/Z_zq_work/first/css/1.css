@@ -1,0 +1,53 @@
+div {
+	margin-top: 70px;
+	margin-right: 100px;
+	margin-bottom: 70px;
+	margin-left: 100px;
+	background-size: 600px;
+	background-color: white;
+}
+body {
+	background-color: rgba(0,128,128,0.3);
+}
+table {
+	margin: 0 auto;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    width: 700px;
+}
+fieldset {
+	margin: 0 auto;
+	width: 500px;
+}
+input {
+	border-radius: 5px;
+}
+textarea {
+	border-radius: 5px;
+}
+  #button1{
+	height: 30;
+    width: 100;
+    background-color: rgb(0,170,110);
+    font-weight: bold;
+    font-size: 15px;}
+  #button2 {
+	height:30;
+	width:100;
+	background-color: rgb(0,128,128);
+    font-weight: bold;
+    font-size: 15px;}
+ul {
+	list-style-type: square;
+    margin:0 auto;}
+a:link {color: green;}
+a:visited {color: blue;}
+a:hover {color: yellow;}
+a:active{color: gray;}
+p {text-indent: 40px;}
+p:first-letter{font-size: 250%;}
+#imgo {
+	position: fixed;
+    top: 50px;
+    right: 50px;
+}

@@ -1,0 +1,19 @@
+body{
+	background-color:rgba(0,170,180,0.2); 
+	margin: 100px 100px 100px 50px; 
+}
+h1{
+	font-style: italic;
+}
+a:link{
+	color: #FF0000
+}
+a:visited{
+	color: #00FF00
+}
+a:hover{
+	color: #0000FF
+}
+.div3{
+	background-color:rgba(0,240,200,0.5);: 
+}

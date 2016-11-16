@@ -1,0 +1,20 @@
+<?php
+$i=5;
+function foo(&$j)
+{
+	$j-=3;
+	if($j>'a')
+	{
+	echo'a';
+	}
+	elseif(j>'e')
+	{
+	echo'e';
+	}
+    else
+    {
+    echo'ok';
+    }
+}
+foo($i);
+?>

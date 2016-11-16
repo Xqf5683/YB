@@ -1,0 +1,55 @@
+.div1 {margin-top: 70px;
+	margin-right: 100px;
+	margin-bottom: 70px;
+	margin-left: 100px;
+	background-size: 600px;
+	background-color: white;}
+
+body {
+	background-color: #CCFFFF;}
+
+table {
+	margin: 0 auto;
+	
+	width: 700px;}
+
+fieldset {margin: 0 auto;
+	width: 500px;}
+
+input {border-radius: 5px;}
+
+textarea {border-radius: 5px;}
+
+#button1{
+	height: 40;
+    width: 150;
+    background-color:#990066;
+    font-weight: bold;
+    font-size: 15px;}
+
+#button2 {
+	height:40;
+	width:150;
+	background-color:  #99CCCC;
+    font-weight: bold;
+    font-size: 15px;}
+
+ul {list-style-type: square;
+margin:0 auto;}
+
+#a1:link {color: green;}
+#a2:visited {color: blue;}
+#a3:hover {color: yellow;}
+#a4:active{color: gray;}
+p {text-indent: 40px;
+}
+
+.class1:first-letter{font-size: 250%;}
+
+#imgo {
+position: fixed;
+top: 50px;
+right: 50px;}
+
+.tr1{background-color: #CCFF99}
+.div2{margin-left: 300px}

@@ -1,0 +1,24 @@
+.img{
+	margin:10px;
+	border:1px solid;
+	height: auto;
+	width: auto;
+	float: left;
+	text-align: center;
+}
+img{
+	height: 250px;
+	width: 200px;
+	display: inline;
+	margin: 3px;
+	border:1px solid #333333;
+}
+a:hover{
+	border:2px solid #333333;
+}
+.tex{
+	text-align: center;
+	font-size: 15px;
+	margin: 10px 5px 10px 5px;
+
+}
