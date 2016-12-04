@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">	<!-- 360手机优先使用chrome内核 -->
+    <meta name="screen-orientation" content="portrait">  <!-- UC强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">  <!-- QQ强制竖屏 -->
+    <meta name="browsermode" content="application">  <!-- UC浏览器应用模式 -->
+    <!--  <meta name="x5-page-mode" content="app">  -->  <!-- QQ应用模式 -->
+	<meta http-equiv="Cache-Control" content="no-siteapp"> <!-- 禁止百度转载页面加载流氓广告 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- 优先使用最高IE内核和chrome内核 -->
+	<meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1.0,user-scalable=no">  <!-- 禁止用户修改网页大小 -->
+	<meta name="google" value="notranslate">  <!-- 禁用google翻译网页 -->
+	<meta name="robots" content="index,follow">  <!-- 网页搜索引擎方式 -->
+    <title>易班值班签到</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		<img id="image-hh"  src="images/hh.png" />		
+	</div>
+	<div class="content">
+		<div class="content-left">
+			<div class="content-left-top">
+				<a class="show-layer" onclick="False()" data-show-layer="hw-layer" role="button">
+					<img id="image-tuan"  src="images/tuan.png" onclick="False()" />
+				</a>		
+			</div>
+			<div class="hw-overlay" id="hw-layer">
+				<div class="hw-layer-wrap">
+					<button type="button" class="close hwLayer-close" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<div class="row">
+						<div class="images-icon"></div>
+						<div class="content-left-foot">
+							<ul>
+								<li><a href="#"><div class="mulu">抢班</div></a></li>
+								<li><a href="#"><div class="mulu">签到</div></a></li>
+								<li><a href="#"><div class="mulu">通讯录</div></a></li>
+								<li><a href="#"><div class="mulu">个人信息</div></a></li>
+								<li><a href="#"><div class="mulu">值班统计</div></a></li>
+								<li><a href="#"><div class="mulu">退班申请</div></a></li>
+								<li><a href="#"><div class="mulu">交流论坛</div></a></li>
+								<li><a href="#"><div class="mulu">行政排班</div></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-left-time">
+				<dl>
+					<dd>&nbsp;8:00 10:00</dd>
+					<dd>10:00 12:00</dd>
+					<dd>12:00 14:00</dd>
+					<dd>14:00 16:00</dd>
+					<dd>16:00 18:00</dd>
+					<dd>18:00 21:00</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="content-right">
+			<div class="content-right-top">
+				<img id="image-week"  src="images/week.png" />		
+			</div>
+			<div class="content-right-foot">
+				<div class="baoban">
+					<img id="image1" class="choice" onclick='next1()' src='images/1.png' />
+					<img id="image1b" class="choice" onclick='next1b()' src='images/1.png' /> 	
+					<img id="image1c" class="choice" onclick='next1c()' src='images/1.png' /> 	
+					<img id="image1d" class="choice" onclick='next1d()' src='images/1.png' /> 	
+					<img id="image1e" class="choice" onclick='next1e()' src='images/1.png' /> 	
+					<img id="image1f" class="choice" onclick='next1f()' src='images/1.png' /> 	
+					<img id="image1g" class="choice" onclick='next1g()' src='images/1.png' /> 	
+				</div>
+				<div class="baoban">
+					<img id="image2" class="choice" onclick='next2()' src='images/1.png' /> 	
+					<img id="image2b" class="choice" onclick='next2b()' src='images/1.png' /> 	
+					<img id="image2c" class="choice" onclick='next2c()' src='images/1.png' /> 	
+					<img id="image2d" class="choice" onclick='next2d()' src='images/1.png' /> 	
+					<img id="image2e" class="choice" onclick='next2e()' src='images/1.png' /> 	
+					<img id="image2f" class="choice" onclick='next2f()' src='images/1.png' /> 	
+					<img id="image2g" class="choice" onclick='next2g()' src='images/1.png' /> 	
+				</div>	 
+				<div class="baoban">
+					<img id="image3" class="choice" onclick='next3()' src='images/1.png' /> 	
+					<img id="image3b" class="choice" onclick='next3b()' src='images/1.png' /> 	
+					<img id="image3c" class="choice" onclick='next3c()' src='images/1.png' /> 	
+					<img id="image3d" class="choice" onclick='next3d()' src='images/1.png' /> 	
+					<img id="image3e" class="choice" onclick='next3e()' src='images/1.png' /> 	
+					<img id="image3f" class="choice" onclick='next3f()' src='images/1.png' /> 	
+					<img id="image3g" class="choice" onclick='next3g()' src='images/1.png' /> 	
+				</div>
+				<div class="baoban">
+					<img id="image4" class="choice" onclick='next4()' src='images/1.png' /> 	
+					<img id="image4b" class="choice" onclick='next4b()' src='images/1.png' /> 	
+					<img id="image4c" class="choice" onclick='next4c()' src='images/1.png' /> 	
+					<img id="image4d" class="choice" onclick='next4d()' src='images/1.png' /> 	
+					<img id="image4e" class="choice" onclick='next4e()' src='images/1.png' /> 	
+					<img id="image4f" class="choice" onclick='next4f()' src='images/1.png' /> 	
+					<img id="image4g" class="choice" onclick='next4g()' src='images/1.png' /> 	
+				</div>
+				<div class="baoban">
+					<img id="image5" class="choice" onclick='next5()' src='images/1.png' /> 	
+					<img id="image5b" class="choice" onclick='next5b()' src='images/1.png' /> 	
+					<img id="image5c" class="choice" onclick='next5c()' src='images/1.png' /> 	
+					<img id="image5d" class="choice" onclick='next5d()' src='images/1.png' /> 	
+					<img id="image5e" class="choice" onclick='next5e()' src='images/1.png' /> 	
+					<img id="image5f" class="choice" onclick='next5f()' src='images/1.png' /> 	
+					<img id="image5g" class="choice" onclick='next5g()' src='images/1.png' /> 	
+				</div>
+				<div class="baoban">
+					<img id="image6" class="choice" onclick='next6()' src='images/1.png' /> 	
+					<img id="image6b" class="choice" onclick='next6b()' src='images/1.png' /> 	
+					<img id="image6c" class="choice" onclick='next6c()' src='images/1.png' /> 	
+					<img id="image6d" class="choice" onclick='next6d()' src='images/1.png' /> 	
+					<img id="image6e" class="choice" onclick='next6e()' src='images/1.png' /> 	
+					<img id="image6f" class="choice" onclick='next6f()' src='images/1.png' /> 	
+					<img id="image6g" class="choice" onclick='next6g()' src='images/1.png' /> 	
+				</div>				
+			</div>
+			
+		</div>	
+	</div>
+	<div class="foot">
+		<div class="foot-left">
+			<p id="tongzhi">注意通知：</p>
+		</div>
+		<div class="foot-right">
+			<p id="zhuyi">每天分为六个班次，每次值班时间为2~3小时。寒暑假及特殊周期值班时按学校易班领导小组统一决定。</p>	
+		</div>
+	</div>	
+
+	<script src="js/jquery.min.js"></script>
+	<script>
+	function False() {
+		//展示层
+		function showLayer(id){
+			var layer = $('#'+id),
+			layerwrap = layer.find('.hw-layer-wrap');
+			layer.fadeIn();
+			//屏幕居中
+			//layerwrap.css({
+			//	'margin-top': -layerwrap.outerHeight()/2
+			//});
+		}
+
+		//隐藏层
+		function hideLayer(){
+			$('.hw-overlay').fadeOut();
+		}
+
+		$('.hwLayer-ok,.hwLayer-cancel,.hwLayer-close').on('click', function() {
+			hideLayer();
+		});
+
+		//触发弹出层
+		$('.show-layer').on('click',  function() {		
+			var layerid = $(this).data('show-layer');
+			showLayer(layerid);
+		});
+
+		//点击或者触控弹出层外的半透明遮罩层，关闭弹出层
+		$('.hw-overlay').on('click',  function(event) {
+			if (event.target == this){
+				hideLayer();
+			}
+		});
+
+		//按ESC键关闭弹出层
+		$(document).keyup(function(event) {
+			if (event.keyCode == 27) {
+				hideLayer();
+			}
+		});
+	}
+	</script>
+
+	<script>
+		var id1a = 1; var id1b = 1; var id1c = 1; var id1d = 1; var id1e = 1; var id1f = 1; var id1g = 1; 
+		var id2a = 1; var id2b = 1; var id2c = 1; var id2d = 1; var id2e = 1; var id2f = 1; var id2g = 1; 
+		var id3a = 1; var id3b = 1; var id3c = 1; var id3d = 1; var id3e = 1; var id3f = 1; var id3g = 1; 
+		var id4a = 1; var id4b = 1; var id4c = 1; var id4d = 1; var id4e = 1; var id4f = 1; var id4g = 1; 
+		var id5a = 1; var id5b = 1; var id5c = 1; var id5d = 1; var id5e = 1; var id5f = 1; var id5g = 1; 
+		var id6a = 1; var id6b = 1; var id6c = 1; var id6d = 1; var id6e = 1; var id6f = 1; var id6g = 1;             
+	 	function next1(){
+	 		id1a=(id1a+1)%4;
+	 		if(id1a==0){
+	 			id1a++;
+	 		}
+	 		document.getElementById("image1").src = 'images/' + id1a + '.png'; 
+	 		console.log(id1a);
+	 	}
+	 	function next1b(){
+	 		id1b=(id1b + 1) % 4; 
+	 		if(id1b==0){
+	 			id1b++;
+	 		}
+	 		document.getElementById("image1b").src = 'images/' + id1b + '.png';
+	 		console.log(id1b);
+	 	} 
+	 	function next1c(){
+	 		id1c = (id1c + 1) % 4; 
+	 		if(id1c==0){
+	 			id1c++;
+	 		} 
+	 		document.getElementById("image1c").src = 'images/' + id1c + '.png'; 
+	 		console.log(id1c); 
+	 	}  
+	 	function next1d(){
+	 		id1d = (id1d + 1) % 4; 
+	 		if(id1d==0){
+	 			id1d++;
+	 		} 
+	 		document.getElementById("image1d").src = 'images/' + id1d + '.png';
+	 		console.log(id1d);
+	 	} 
+	 	function next1e(){
+	 		id1e = (id1e + 1) % 4;
+	 		if(id1e==0){
+	 			id1e++;
+	 		} 
+	 		document.getElementById("image1e").src = 'images/' + id1e + '.png'; 
+	 		console.log(id1e);
+	 	} 
+	 	function next1f(){
+	 		id1f = (id1f + 1) % 4;
+	 		if(id1f==0){
+	 			id1f++;
+	 		} 
+	 		document.getElementById("image1f").src = 'images/' + id1f + '.png'; 
+	 		console.log(id1f);
+	 	}
+	 	function next1g(){
+	 		id1g = (id1g + 1) % 4;
+	 		if(id1g==0){
+	 			id1g++;
+	 		} 
+	 		document.getElementById("image1g").src = 'images/' + id1g + '.png'; 
+	 		console.log(id1g);
+	 	} 
+	 	function next2(){
+	 		id2a = (id2a + 1) % 4;
+	 		if(id2a==0){
+	 			id2a++;
+	 		} 
+	 		document.getElementById("image2").src = 'images/' + id2a + '.png'; 
+	 		console.log(id2a);
+	 	}
+	 	function next2b(){
+	 		id2b = (id2b + 1) % 4;
+	 		if(id2b==0){
+	 			id2b++;
+	 		} 
+	 		document.getElementById("image2b").src = 'images/' + id2b + '.png'; 
+	 		console.log(id2b);
+	 	}  
+	 	function next2c(){
+	 		id2c = (id2c + 1) % 4; 
+	 		if(id2c==0){
+	 			id2c++;
+	 		} 
+	 		document.getElementById("image2c").src = 'images/' + id2c + '.png'; 
+	 		console.log(id2c); 
+	 	}  
+	 	function next2d(){
+	 		id2d = (id2d + 1) % 4; 
+	 		if(id2d==0){
+	 			id2d++;
+	 		} 
+	 		document.getElementById("image2d").src = 'images/' + id2d + '.png';
+	 		console.log(id2d);
+	 	} 
+	 	function next2e(){
+	 		id2e = (id2e + 1) % 4;
+	 		if(id2e==0){
+	 			id2e++;
+	 		} 
+	 		document.getElementById("image2e").src = 'images/' + id2e + '.png'; 
+	 		console.log(id2e);
+	 	} 
+	 	function next2f(){
+	 		id2f = (id2f + 1) % 4;
+	 		if(id2f==0){
+	 			id2f++;
+	 		} 
+	 		document.getElementById("image2f").src = 'images/' + id2f + '.png'; 
+	 		console.log(id2f);
+	 	}
+	 	function next2g(){
+	 		id2g = (id2g + 1) % 4;
+	 		if(id2g==0){
+	 			id2g++;
+	 		} 
+	 		document.getElementById("image2g").src = 'images/' + id2g + '.png'; 
+	 		console.log(id2g);
+	 	} 
+	 	function next3(){
+	 		id3a=(id3a+1)%4;
+	 		if(id3a==0){
+	 			id3a++;
+	 		}
+	 		document.getElementById("image3").src = 'images/' + id3a + '.png'; 
+	 		console.log(id3a);
+	 	}
+	 	function next3b(){
+	 		id3b=(id3b + 1) % 4; 
+	 		if(id3b==0){
+	 			id3b++;
+	 		}
+	 		document.getElementById("image3b").src = 'images/' + id3b + '.png';
+	 		console.log(id3b);
+	 	} 
+	 	function next3c(){
+	 		id3c = (id3c + 1) % 4; 
+	 		if(id3c==0){
+	 			id3c++;
+	 		} 
+	 		document.getElementById("image3c").src = 'images/' + id3c + '.png'; 
+	 		console.log(id3c); 
+	 	}  
+	 	function next3d(){
+	 		id3d = (id3d + 1) % 4; 
+	 		if(id3d==0){
+	 			id3d++;
+	 		} 
+	 		document.getElementById("image3d").src = 'images/' + id3d + '.png';
+	 		console.log(id3d);
+	 	} 
+	 	function next3e(){
+	 		id3e = (id3e + 1) % 4;
+	 		if(id3e==0){
+	 			id3e++;
+	 		} 
+	 		document.getElementById("image3e").src = 'images/' + id3e + '.png'; 
+	 		console.log(id3e);
+	 	} 
+	 	function next3f(){
+	 		id3f = (id3f + 1) % 4;
+	 		if(id3f==0){
+	 			id3f++;
+	 		} 
+	 		document.getElementById("image3f").src = 'images/' + id3f + '.png'; 
+	 		console.log(id3f);
+	 	}
+	 	function next3g(){
+	 		id3g = (id3g + 1) % 4;
+	 		if(id3g==0){
+	 			id3g++;
+	 		} 
+	 		document.getElementById("image3g").src = 'images/' + id3g + '.png'; 
+	 		console.log(id3g);
+	 	}
+	 	function next4(){
+	 		id4a=(id4a+1)%4;
+	 		if(id4a==0){
+	 			id4a++;
+	 		}
+	 		document.getElementById("image4").src = 'images/' + id4a + '.png'; 
+	 		console.log(id4a);
+	 	}
+	 	function next4b(){
+	 		id4b=(id4b + 1) % 4; 
+	 		if(id4b==0){
+	 			id4b++;
+	 		}
+	 		document.getElementById("image4b").src = 'images/' + id4b + '.png';
+	 		console.log(id4b);
+	 	} 
+	 	function next4c(){
+	 		id4c = (id4c + 1) % 4; 
+	 		if(id4c==0){
+	 			id4c++;
+	 		} 
+	 		document.getElementById("image4c").src = 'images/' + id4c + '.png'; 
+	 		console.log(id4c); 
+	 	}  
+	 	function next4d(){
+	 		id4d = (id4d + 1) % 4; 
+	 		if(id4d==0){
+	 			id4d++;
+	 		} 
+	 		document.getElementById("image4d").src = 'images/' + id4d + '.png';
+	 		console.log(id4d);
+	 	} 
+	 	function next4e(){
+	 		id4e = (id4e + 1) % 4;
+	 		if(id4e==0){
+	 			id4e++;
+	 		} 
+	 		document.getElementById("image4e").src = 'images/' + id4e + '.png'; 
+	 		console.log(id4e);
+	 	} 
+	 	function next4f(){
+	 		id4f = (id4f + 1) % 4;
+	 		if(id4f==0){
+	 			id4f++;
+	 		} 
+	 		document.getElementById("image4f").src = 'images/' + id4f + '.png'; 
+	 		console.log(id4f);
+	 	}
+	 	function next4g(){
+	 		id4g = (id4g + 1) % 4;
+	 		if(id4g==0){
+	 			id4g++;
+	 		} 
+	 		document.getElementById("image4g").src = 'images/' + id4g + '.png'; 
+	 		console.log(id4g);
+	 	}
+	 	function next5(){
+	 		id5a=(id5a+1)%4;
+	 		if(id5a==0){
+	 			id5a++;
+	 		}
+	 		document.getElementById("image5").src = 'images/' + id5a + '.png'; 
+	 		console.log(id5a);
+	 	}
+	 	function next5b(){
+	 		id5b=(id5b + 1) % 4; 
+	 		if(id5b==0){
+	 			id5b++;
+	 		}
+	 		document.getElementById("image5b").src = 'images/' + id5b + '.png';
+	 		console.log(id5b);
+	 	} 
+	 	function next5c(){
+	 		id5c = (id5c + 1) % 4; 
+	 		if(id5c==0){
+	 			id5c++;
+	 		} 
+	 		document.getElementById("image5c").src = 'images/' + id5c + '.png'; 
+	 		console.log(id5c); 
+	 	}  
+	 	function next5d(){
+	 		id5d = (id5d + 1) % 4; 
+	 		if(id5d==0){
+	 			id5d++;
+	 		} 
+	 		document.getElementById("image5d").src = 'images/' + id5d + '.png';
+	 		console.log(id5d);
+	 	} 
+	 	function next5e(){
+	 		id5e = (id5e + 1) % 4;
+	 		if(id5e==0){
+	 			id5e++;
+	 		} 
+	 		document.getElementById("image5e").src = 'images/' + id5e + '.png'; 
+	 		console.log(id5e);
+	 	} 
+	 	function next5f(){
+	 		id5f = (id5f + 1) % 4;
+	 		if(id5f==0){
+	 			id5f++;
+	 		} 
+	 		document.getElementById("image5f").src = 'images/' + id5f + '.png'; 
+	 		console.log(id5f);
+	 	}
+	 	function next5g(){
+	 		id5g = (id5g + 1) % 4;
+	 		if(id5g==0){
+	 			id5g++;
+	 		} 
+	 		document.getElementById("image5g").src = 'images/' + id5g + '.png'; 
+	 		console.log(id5g);
+	 	}
+	 	function next6(){
+	 		id6a=(id6a+1)%4;
+	 		if(id6a==0){
+	 			id6a++;
+	 		}
+	 		document.getElementById("image6").src = 'images/' + id6a + '.png'; 
+	 		console.log(id6a);
+	 	}
+	 	function next6b(){
+	 		id6b=(id6b + 1) % 4; 
+	 		if(id6b==0){
+	 			id6b++;
+	 		}
+	 		document.getElementById("image6b").src = 'images/' + id6b + '.png';
+	 		console.log(id6b);
+	 	} 
+	 	function next6c(){
+	 		id6c = (id6c + 1) % 4; 
+	 		if(id6c==0){
+	 			id6c++;
+	 		} 
+	 		document.getElementById("image6c").src = 'images/' + id6c + '.png'; 
+	 		console.log(id6c); 
+	 	}  
+	 	function next6d(){
+	 		id6d = (id6d + 1) % 4; 
+	 		if(id6d==0){
+	 			id6d++;
+	 		} 
+	 		document.getElementById("image6d").src = 'images/' + id6d + '.png';
+	 		console.log(id6d);
+	 	} 
+	 	function next6e(){
+	 		id6e = (id6e + 1) % 4;
+	 		if(id6e==0){
+	 			id6e++;
+	 		} 
+	 		document.getElementById("image6e").src = 'images/' + id6e + '.png'; 
+	 		console.log(id6e);
+	 	} 
+	 	function next6f(){
+	 		id6f = (id6f + 1) % 4;
+	 		if(id6f==0){
+	 			id6f++;
+	 		} 
+	 		document.getElementById("image6f").src = 'images/' + id6f + '.png'; 
+	 		console.log(id6f);
+	 	}
+	 	function next6g(){
+	 		id6g = (id6g + 1) % 4;
+	 		if(id6g==0){
+	 			id6g++;
+	 		} 
+	 		document.getElementById("image6g").src = 'images/' + id6g + '.png'; 
+	 		console.log(id6g);
+	 	}
+	</script>
+
+</body>
+</html>
