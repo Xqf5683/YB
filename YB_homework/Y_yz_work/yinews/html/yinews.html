@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1.0,user-scalable=no">
+	<title>易新闻</title>
+	<link rel="stylesheet" type="text/css" href="../css/yinews.css">
+</head>
+<body>
+	<section>
+		<img src="../photo/star.png" alt="">
+	</section>
+	<header>
+		<h1>中南大学易新闻</h1>
+	</header>
+	<article>
+		<img src="../photo/xiong.png" alt="">
+		<nav>
+			<div class="zhuye">
+				<canvas id="canvas1" width="610px" height="200px">
+				</canvas>
+				<ul>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">关于</a></li>
+					<li><a href="#">主页</a></li>
+				</ul>
+			</div>
+			<div>
+				<canvas id="canvas2" width="610px" height="200px">
+				</canvas>
+				<ul>
+					<li><a href="#">志愿服务</a></li>
+					<li><a href="#">社会实践</a></li>
+					<li><a href="#">学工新闻</a></li>
+					<li><a href="#">团委动态</a></li>
+					<li><a href="#">学校要闻</a></li>
+				</ul>
+			</div>
+			<div>
+				<canvas id="canvas3" width="610px" height="200px">
+				</canvas>
+				<ul>
+					<li><a href="#">学生天地</a></li>
+					<li><a href="#">中南故事</a></li>
+					<li><a href="#">综合新闻</a></li>
+					<li><a href="#">中南人物</a></li>
+				</ul>
+			</div>
+		</nav>
+	</article>
+	
+	<main>
+		<br><br><br><br><br>
+		<canvas id="canvas4" width="1200px" height="400px">
+		</canvas>
+		<canvas id="canvas5" width="1200px" height="400px">
+		</canvas>
+		<div>
+			<p>心事全都摊开让你看</p>
+			<p>啦啦啦啦啦啦</p>
+			<p>我愿变成童话里你爱的那个天使</p>
+			<p>雪下得那么深下的那么认真</p>
+		</div>
+	</main>
+	<script type="text/javascript">
+		var	canvas=document.getElementById('canvas1');
+		var c=canvas.getContext('2d');
+			c.lineWidth="10";
+			c.fillStyle="#FFCC00"
+			c.beginPath()
+			c.moveTo(310,10);
+			c.lineTo(620,0);
+			c.lineTo(620,40);
+			c.lineTo(310,50);
+			c.closePath();
+			c.fill()
+	</script>
+	<script type="text/javascript">
+		var	canvas2=document.getElementById('canvas2');
+		var c=canvas2.getContext('2d');
+			c.lineWidth="10";
+			c.fillStyle="#FFCC00"
+			c.beginPath()
+			c.moveTo(0,5);
+			c.lineTo(620,0);
+			c.lineTo(620,40);
+			c.lineTo(0,45);
+			c.closePath();
+			c.fill()
+	</script>
+	<script type="text/javascript">
+		var	canvas3=document.getElementById('canvas3');
+		var c=canvas3.getContext('2d');
+			c.lineWidth="10";
+			c.fillStyle="#FFCC00"
+			c.beginPath()
+			c.moveTo(66,0);
+			c.lineTo(620,10);
+			c.lineTo(620,45);
+			c.lineTo(66,35);
+			c.closePath();
+			c.fill()
+	</script>
+	<script type="text/javascript">
+		var	canvas4=document.getElementById('canvas4');
+		var c=canvas4.getContext('2d');
+			g=c.createLinearGradient(600,0,600,400);
+			g.addColorStop(0,"white")
+			g.addColorStop(0.2,"#FFFF99")
+			g.addColorStop(1,"#FF9900")
+			c.fillStyle=g;
+			c.beginPath()
+			c.moveTo(50,0);
+			c.lineTo(1150,0);
+			c.lineTo(1200,400);
+			c.lineTo(0,400);
+			c.closePath();
+			c.fill()
+	</script>
+	<script type="text/javascript">
+		var	canvas5=document.getElementById('canvas5');
+		var c=canvas5.getContext('2d');
+			c.strokeStyle="#CC9966";
+			c.moveTo(300,80);
+			c.lineTo(800,80);
+			c.moveTo(300,160);
+			c.lineTo(800,160);
+			c.moveTo(300,240);
+			c.lineTo(800,240);
+			c.moveTo(300,300);
+			c.lineTo(800,300);
+			c.stroke()
+	</script>
+</body>
+</html>	
