@@ -1,0 +1,81 @@
+body{
+	height: 800px;
+	background: #FFFF99
+}
+h1{
+	font-size: 40px
+}
+section img{
+	width: 85%;
+	height: 900px;
+	position: absolute;
+	z-index: 5
+}
+header{
+	text-align: center;
+}
+article{
+	width: 100%;
+	height: 300px;
+}
+article img{
+	float: left;
+}
+nav{
+
+	float: right;
+}
+nav div{
+	width: auto;
+	height: 20px;
+	margin-top: 50px;
+
+}
+.zhuye{
+	font-size: 15px;
+	margin-top: 0;
+	margin-bottom: 100px
+}
+nav div ul{
+	position: absolute;
+	z-index: 8;
+	text-align: right;
+	list-style: none;
+	right: 0;
+	height: 25px
+}
+
+nav div ul li{
+	float: right;
+	margin-left: 50px
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+
+main{
+	position: absolute;
+	z-index: 2;
+	height: 300px;
+	width: 1300px;
+	left: 0px;
+	bottom: 0 	
+}
+main div{
+	position: absolute;
+	z-index: 2;
+	left: 600px
+}
+main div p{	
+	margin-top: 60px;
+	font-size: 9px;
+}
+
+canvas{
+	right:0;
+	position: absolute;
+	z-index: 1}
+a:hover{
+	color: red
+}
