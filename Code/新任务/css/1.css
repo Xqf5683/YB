@@ -1,0 +1,196 @@
+body {
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+ul {
+	list-style-type: none;
+}
+.a a {
+	color: black;
+}
+a{
+	text-align: center;
+	text-decoration: none;
+	font-family:KaiTi;
+	color: rgb(133,86,21);
+	display: block;
+}
+.all {
+	position: fixed;
+	top: -4em;
+	right: -1em;
+}
+li {float: left;}
+}
+div {
+	float: left;
+}
+#p1 {
+	position: relative;
+	float: right;
+	transform: rotate(-5deg);
+	background-color: rgb(255,240,188);
+	z-index: -999;
+}
+#p2 {
+	transform: rotate(-3deg);
+	position: relative;
+	background-color: rgb(255,240,188);
+	z-index: -999;
+}
+#p3 {
+	position: relative;
+	background-color: rgb(255,240,188);
+	z-index: -999;
+}
+#p4 {
+	position: relative;
+	float: right;
+	transform: rotate(3deg);
+	background-color: rgb(255,240,188);
+	z-index: -999;
+}
+@media only screen and (min-width: 420px){
+
+h1 {
+	font-size: 3.7em;
+	letter-spacing: 0.5em;
+	text-align: center;
+	font-weight: bolder;
+	font-family: SimHei;
+}
+.bear img{
+	width: 20.4%;
+	position: fixed;
+	top: 8.5em;
+	left: 0;
+	z-index: 99999;
+}
+.a{
+	font-size: 0.85em;
+	position: fixed;
+	top: 8.5em;
+	right: 8em;
+	font-weight:normal;
+}
+.a li{
+	display: block;
+	padding-left: 2em;
+	width: 4em;
+}
+.b{
+	position: relative;
+	top: 15.5em;
+	right: 18em;
+	padding-top:  -0.1em;
+}
+.c{
+	position: relative;
+	top: 12.5em;
+	right: -8em;
+	padding-top:  -0.1em;
+}
+.d{
+	position: relative;
+	top: 13em;
+	padding-top:  -0.1em;
+	right: -5em;
+}
+
+a{
+	font-size: 1.9em;
+	width: 4.5em;
+}
+.all {
+	width: 37em;
+}
+#p1 {
+	width: 17em;
+	top: -2em;
+	right: 2em;
+	height: 2em;
+}
+#p2 {
+	width: 52em;
+	top: 15.5em;
+	right: 16em;
+	height: 2em;
+	transform: rotate(-1.5deg);
+}
+#p3 {
+	width: 28em;
+	top: 16em;
+	right:-6em;
+	height: 2em;
+	transform: rotate(3deg);
+}
+}
+@media only screen and (min-width: 319px) and (max-width: 419px){
+
+h1 {
+	font-size: 2.2em;
+	text-align: center;
+	font-weight: bolder;
+	font-family: SimHei;
+}
+.bear img{
+	width: 33.7%;
+	position: fixed;
+	top: 7.5em;
+	left: 0;
+	z-index: 99999;
+}
+.a{
+	font-size: 1em;
+	position: fixed;
+	top: 4em;
+	right: 3em;
+	font-weight:normal;
+}
+.a li{
+	display: block;
+	padding-left: 1em;
+	width: 2.5em;
+}
+.b,.c,.d {
+	position: relative;
+	top: 12em;
+	padding-top:  -1em;
+}
+.b,.d{
+	right: 1.2em;
+}
+a{
+	font-size: 1em;
+	width: 5em;
+}
+.all {
+	width: 18em;
+}
+#p1 {
+	width: 13em;
+	top: -1.5em;
+	right: -1em;
+	height: 1.2em;
+}
+#p2 {
+	width: 22em;
+	top: 12em;
+	right: -1.5em;
+	height: 1.2em;
+	transform: rotate(-3deg);
+}
+#p3 {
+	width: 22em;
+	top: 12em;
+	right:-3em;
+	height: 1.2em;
+}
+#p4 {
+	width: 17em;
+	top: 3.8em;
+	right: -2em;
+	height: 1.2em;
+}
+
+}
